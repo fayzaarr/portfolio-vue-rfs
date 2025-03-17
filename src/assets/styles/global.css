@@ -1,0 +1,36 @@
+/* src/assets/styles/main.css */
+body {
+    background-color: #eeedf4;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Poppins:wght@600&display=swap');
+
+/* .mainHeader {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+    background-color: #eeedf4;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+} */
