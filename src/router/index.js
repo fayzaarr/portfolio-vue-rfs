@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeViewPage from "@/views/HomePageView.vue";
 import ContactViewPage from "@/views/ContactViewPage.vue";
 
@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Gunakan Hash Mode agar GitHub Pages support
   routes,
 });
 
