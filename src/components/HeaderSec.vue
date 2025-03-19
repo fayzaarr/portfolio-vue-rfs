@@ -39,7 +39,7 @@
   .logo {
     height: 45px;
     width: 45px;
-    background-image: url(@/assets/images/9RjhQp-LogoMakr.png);
+    background-image: url("https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/9RjhQp-LogoMakr_okz0kb.png");
     background-size: cover;
     background-position: center;
   }

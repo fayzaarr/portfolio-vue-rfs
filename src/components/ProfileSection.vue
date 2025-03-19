@@ -27,12 +27,22 @@
           </p>
         </div>
         <div class="prof-image">
-          <img src="@/assets/images/prof2-edit.jpeg" alt="Profile Picture">
+          <img :src="imageUrl" alt="Profile Picture">
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      imageUrl: "https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352631/prof2-edit_byzgjd.jpg"
+    };
+  }
+};
+</script>
   
 <style scoped>
 /* Section Profile */

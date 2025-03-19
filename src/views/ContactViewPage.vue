@@ -1,7 +1,7 @@
 <template>
   <div class="contact-container">
     <header>
-      <img src="@/assets/images/logonamaputih.png" alt="Logo" class="logo">
+      <img :src="logoNamaPutih" alt="Logo" class="logo">
       <button class="back-button" @click="$router.push('/')">
         BACK
       </button>
@@ -57,12 +57,13 @@ import Swal from "sweetalert2";
 export default {
 data() {
     return {
-    formData: {
-        name: "",
-        email: "",
-        projectType: "",
-        details: ""
-    }
+      logoNamaPutih: "https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/logonamaputih_qq5f6m.png",
+      formData: {
+          name: "",
+          email: "",
+          projectType: "",
+          details: ""
+      }
     };
 },
 methods: {

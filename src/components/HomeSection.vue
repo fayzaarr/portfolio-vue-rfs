@@ -22,6 +22,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      backgroundImage: "https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/banner1_dhpqj2.png"
+    };
+  }
+};
+</script>
   
 <style scoped>
 /* CSS dari Home Section */
@@ -37,7 +47,7 @@
 
 #section-home::before {
     content: '';
-    background: url(@/assets/images/banner1.png) no-repeat center center;
+    background: url("https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/banner1_dhpqj2.png") no-repeat center center;
     background-size: cover;
     position: absolute;
     top: 0;
