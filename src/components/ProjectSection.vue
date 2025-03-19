@@ -45,7 +45,7 @@ export default {
           category: "Website",
           title: "Portfolio",
           description: "Personal portfolio website using Vue.js framework.",
-          link: "https://github.com/fayzaarr/portfolio-rifasya",
+          link: "https://github.com/fayzaarr/portfolio-vue-rfs",
           icon: "logo1.png"
         },
         {
