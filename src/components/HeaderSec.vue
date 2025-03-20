@@ -2,11 +2,11 @@
   <header class="mainHeader">
     <div class="logo" />
     <nav :class="{ active: isMenuOpen }">
-      <a href="#section-home" @click="closeMenu">Home</a>
-      <a href="#section-profile" @click="closeMenu">About</a>
-      <a href="#section-projects" @click="closeMenu">Projects</a>
-      <a href="#section-services" @click="closeMenu">Services</a>
-      <a href="#section-contact" @click="closeMenu">Contact</a>
+      <a href="#section-home" @click="scrollToSection('section-home')">Home</a>
+      <a href="#section-profile" @click="scrollToSection('section-profile')">About</a>
+      <a href="#section-projects" @click="scrollToSection('section-projects')">Projects</a>
+      <a href="#section-services" @click="scrollToSection('section-services')">Services</a>
+      <a href="#section-contact" @click="scrollToSection('section-contact')">Contact</a>
     </nav>
     <div class="hamburger-menu" @click="toggleMenu">
       <span />
@@ -29,7 +29,14 @@
       },
       closeMenu() {
         this.isMenuOpen = false;
-      }
+      },
+      scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+        this.isMenuOpen = false; // Tutup menu setelah klik
+      },
     }
   };
   </script>
