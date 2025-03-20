@@ -13,11 +13,11 @@
       </div>
       <div class="nav-social">
         <nav class="nav-links">
-          <a href="#section-home">Home</a>
-          <a href="#section-about">About</a>
-          <a href="#section-projects">Projects</a>
-          <a href="#section-services">Services</a>
-          <a href="#section-contact">Contact</a>
+          <a href="#section-home" @click.prevent="scrollToSection('section-home')">Home</a>
+          <a href="#section-profile" @click.prevent="scrollToSection('section-profile')">About</a>
+          <a href="#section-projects" @click.prevent="scrollToSection('section-projects')">Projects</a>
+          <a href="#section-services" @click.prevent="scrollToSection('section-services')">Services</a>
+          <a href="#section-contact" @click.prevent="scrollToSection('section-contact')">Contact</a>
         </nav>
         <div class="social-icons">
           <a href="https://github.com/fayzaarr" target="_blank"><img src="@/assets/icon/logo(white).png" alt="GitHub"></a>
@@ -37,6 +37,14 @@
 <script>
 export default {
   name: "FooterSection",
+  methods: {
+    scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  }
 };
 </script>
 
