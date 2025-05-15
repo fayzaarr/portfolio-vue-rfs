@@ -1,24 +1,14 @@
-# portfolio-vue-rfs
+# 🚧 Proyek dalam Pengembangan 🚧
 
-## Project setup
-```
-npm install
-```
+Ini adalah proyek yang masih dalam tahap pengembangan. Saat ini, fitur-fitur utama sedang dikerjakan, dan beberapa aspek mungkin belum berfungsi sepenuhnya.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## ⚠️ Status Saat Ini
+- ✅ Fitur dasar telah dibuat
+- ❌ Responsiveness belum diterapkan
+- 🔨 Pengembangan masih berlangsung
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 📌 Catatan
+- Proyek ini mungkin tidak berjalan optimal di perangkat mobile karena belum mendukung tampilan responsif.
+- Perubahan dan pembaruan akan terus dilakukan untuk meningkatkan pengalaman pengguna.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Terima kasih telah mengunjungi proyek ini! 🚀
