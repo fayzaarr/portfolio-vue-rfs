@@ -244,7 +244,6 @@ textarea {
   }
 
   header {
-    flex-direction: column;
     gap: 1rem;
   }
 
@@ -254,15 +253,16 @@ textarea {
   }
 
   .logo {
-    width: 50px;
+    width: 70px;
   }
 
   .back-button {
-    width: 100%;
+    width: 25%;
+    font-size: 0.7rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   label {

@@ -158,16 +158,17 @@ export default {
   }
 
   .brand h2 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .brand p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .desc-footer {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 
   .nav-links {
@@ -176,7 +177,7 @@ export default {
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 
@@ -192,7 +193,7 @@ export default {
   }
 
   .footer-bottom {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding-top: 0;
   }
 }

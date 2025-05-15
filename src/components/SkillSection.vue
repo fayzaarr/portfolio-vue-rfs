@@ -356,7 +356,7 @@ h3 {
   }
 
   .progress-fill {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .progress-list {

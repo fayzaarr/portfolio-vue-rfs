@@ -128,7 +128,7 @@ p span {
 }
 
 /* Responsive Mode */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { 
   .profile-container {
     width: 68%;
   }
@@ -152,6 +152,11 @@ p span {
 }
 
 @media screen and (max-width: 768px) {
+  #section-profile {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -168,7 +173,7 @@ p span {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .prof-image {
