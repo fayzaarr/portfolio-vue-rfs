@@ -1,6 +1,5 @@
 <template>
   <footer class="footer">
-    <!-- <hr> -->
     <div class="footer-content">
       <div class="brand">
         <h2 class="blankafont">
@@ -49,7 +48,6 @@ export default {
 </script>
 
 <style scoped>
-/* font blanka */
 @font-face {
   font-family: 'Blanka';
   src: url('@/assets/fonts/blanka/BLANKA Font/Blanka-Regular.otf') format('opentype');
@@ -64,13 +62,11 @@ export default {
   text-align: center;
 }
 
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* padding-top: 1vw; */
   padding-bottom: 10px;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -146,8 +142,6 @@ export default {
   padding-bottom: 1px;
 }
 
-
-/* Responsive untuk layar <=768px (tablet dan HP) */
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -178,7 +172,6 @@ export default {
 
   .nav-links {
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
   }
 

@@ -127,7 +127,7 @@ p span {
   border: 2px solid #eeedf4;
 }
 
-/* responsive */
+/* Responsive Mode */
 @media screen and (min-width: 1200px) {
   .profile-container {
     width: 68%;

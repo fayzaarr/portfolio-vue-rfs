@@ -3,13 +3,13 @@
     <div class="container">
       <div v-for="(skill, index) in skills" :key="index" class="skill-card">
         <div class="grid-layout">
-          <!-- Kiri: Icon + Title -->
+          <!-- Icon + Title -->
           <div class="skill-header">
             <img :src="require(`@/assets/icon/${skill.icon}`)" alt="icon" class="skill-icon">
             <h3>{{ skill.title }}</h3>
           </div>
   
-          <!-- Tengah: Deskripsi & Kategori -->
+          <!-- Deskripsi & Kategori -->
           <div class="skill-info">
             <p class="description">
               {{ skill.description }}
@@ -22,7 +22,7 @@
             </p>
           </div>
   
-          <!-- Kanan: Tools -->
+          <!--Tools -->
           <div class="progress-container">
             <p class="tools-title">
               Tools:
@@ -156,12 +156,11 @@
 
 .grid-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr; /* Bagi jadi 3 kolom */
+  grid-template-columns: 1fr 2fr 2fr; 
   align-items: center;
   gap: 40px;
 }
 
-/* Icon + Title */
 .skill-header {
   display: flex;
   flex-direction: column;
@@ -181,14 +180,12 @@ h3 {
   margin-top: 10px;
 }
 
-/* Deskripsi */
 .skill-info {
   text-align: center;
 }
 
 .description {
   font-size: 1.1vw;
-  /* font-weight: 600; */
   color: black;
   margin: 0;
   padding: 0;
@@ -205,7 +202,6 @@ h3 {
   color: #000000;
 }
 
-/* Tools */
 .progress-container {
   text-align: left;
 }
@@ -235,7 +231,6 @@ h3 {
     font-size: 1vw;
 }
 
-/* Container untuk progress bar */
 .progress-item {
   display: flex;
   align-items: center;
@@ -243,20 +238,18 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Progress bar utama */
 .progress-bar {
   flex-grow: 1;
   height: 1.5vw;
-  background: #d3d3d3; /* Warna background */
+  background: #d3d3d3;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
 
-/* Efek gradient + animasi isi progress */
 .progress-fill {
   height: 100%;
-  width: 0; /* Awalnya kosong */
+  width: 0; 
   background: linear-gradient(to right, #9e9e9e, #000);
   border-radius: 20px;
   position: relative;
@@ -271,14 +264,13 @@ h3 {
   animation-delay: var(--delay, 0s);
 }
 
-/* Animasi pengisian progress bar */
 @keyframes fillBar {
   to {
     width: var(--fill-width);
   }
 }
 
-/* Responsive di layar besar */
+/* Responsive Mode */
 @media screen and (min-width: 1200px) {
   .skill-icon {
     width: 5vw;
@@ -314,10 +306,9 @@ h3 {
   }
 }
 
-/* Responsive di layar kecil (tablet & HP) */
 @media screen and (max-width: 768px) {
   .grid-layout {
-    grid-template-columns: 1fr; /* Jadi 1 kolom */
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 20px;
   }

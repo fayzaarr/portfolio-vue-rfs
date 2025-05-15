@@ -44,7 +44,6 @@ export default {
   width: 100%;
   min-height: 65vh;
   color: #0d0e0e;
-  /* padding: 3vw; */
   font-weight: lighter;
   overflow: hidden;
 }
@@ -89,6 +88,8 @@ export default {
 .social-links img:hover {
   transform: scale(1.2);
 }
+
+/* Responsive Mode */
 
 @media (min-width: 1200px) {
   #section-home {

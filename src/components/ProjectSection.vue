@@ -127,14 +127,12 @@ export default {
   padding: 0 3vw;
 }
 
-/* Card Container */
 .bg-cardproj {
   background-color: #eeedf4;
   width: auto;
   margin-top: 5vw;
   display: grid;
   overflow: visible;
-  /* padding: 2vw; */
 }
 
 .cards-container {
@@ -147,13 +145,12 @@ export default {
   margin-top: -3vw;
 }
 
-/* Card Styling */
 .card {
   background-color: #eeedf4;
   border-radius: 20px;
   box-shadow: 0 1px 5px rgb(0, 0, 0);
   width: 24vw;
-  max-width: 480px; /* Biar gak terlalu besar di layar gede */
+  max-width: 480px;
   height: auto;
   padding: 20px;
   display: flex;
@@ -178,12 +175,10 @@ export default {
 .card p {
   font-size: 1vw;
   padding: 10px;
-  /* margin-bottom: 2vw; */
   line-height: 1.5;
   font-weight: lighter;
 }
 
-/* Button */
 .btn-proj {
   display: flex;
   align-items: center;
@@ -216,9 +211,7 @@ export default {
   filter: grayscale(100%) brightness(0.1);
 }
 
-/* ================== Responsive Breakpoints ================== */
-
-/* Layar lebih dari 1200px */
+/* Responsive Mode */
 @media (min-width: 1200px) {
   .proj-text h5 {
     font-size: 1vw;
@@ -237,7 +230,6 @@ export default {
   }
 }
 
-/* Tablet (max 768px) */
 @media (max-width: 768px) {
   #section-projects {
     margin-bottom: 5vw;
@@ -260,7 +252,6 @@ export default {
   }
 
   .cards-container {
-    /* flex-direction: column; */
     gap: 30px;
     align-content: center;
   }

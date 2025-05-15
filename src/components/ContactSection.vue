@@ -23,7 +23,7 @@ export default {
   name: "ContactSection",
   methods: {
     goToContact() {
-      this.$router.push("/contact"); // Arahkan ke halaman ContactViewPage
+      this.$router.push("/contact");
     }
   }
 };
@@ -96,13 +96,11 @@ export default {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive untuk layar <=1200px */
+/* Responsive Mode */
 @media screen and (min-width: 1200px) {
   .contact-box {
-    /* flex-direction: column; */
     width: 50%;
     gap: 3vw;
-    /* padding: 2vw; */
     margin-top: -7.5vw;
   }
 
@@ -119,10 +117,8 @@ export default {
   }
 }
 
-/* Responsive untuk layar <=768px (tablet dan HP) */
 @media screen and (max-width: 768px) {
   .contact-box {
-    /* flex-direction: column; */
     gap: 20px;
     padding: 20px;
     margin-top: -10vw;
@@ -141,7 +137,6 @@ export default {
   }
 
   .contact-container {
-    /* padding: 30px 10px; */
     padding-top: 7vw;
     padding: 3vw;
   }

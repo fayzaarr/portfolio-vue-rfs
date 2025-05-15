@@ -47,13 +47,12 @@
 <style scoped>
 hr {
     border: none;
-    height: 2px; /* Ketebalan garis */
-    background-color: #000; /* Warna hitam */
-    width: 90%; /* Biar nggak full lebar */
+    height: 2px;
+    background-color: #000; 
+    width: 90%; 
     margin: 10px auto; 
 }
 
-/* Section Services */
 .bg-service {
     position: relative;
     background-color: #eeedf4;
@@ -77,7 +76,6 @@ hr {
     margin: 0;
 }
 
-/* Container untuk cards */
 .card-services {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +86,6 @@ hr {
     margin: auto;
 }
 
-/* Card Styling */
 .cont-services {
     background-color: #eeedf4;
     border-radius: 15px;
@@ -115,7 +112,6 @@ hr {
     opacity: 0.8;
 }
 
-/* Hover Effect */
 .cont-services:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
@@ -124,10 +120,10 @@ hr {
     color: #eeedf4;
 }
   
-/* Responsive untuk layar <= 1200px */
+/* Responsive Mode */
 @media screen and (min-width: 1200px) {
   .cont-services {
-    width: 28%; /* Lebih besar karena layar mengecil */
+    width: 28%; 
   }
 
   .cont-services h1 {
@@ -160,10 +156,8 @@ hr {
   }
 }
 
-/* Responsive untuk layar <= 768px (tablet dan HP) */
 @media screen and (max-width: 768px) {
   .card-services {
-    /* flex-direction: column; */
     gap: 20px;
     padding-bottom: 5vw;
   }
@@ -193,6 +187,5 @@ hr {
     font-size: 1.2rem;
   }
 }
-
-  </style>
+</style>
   
