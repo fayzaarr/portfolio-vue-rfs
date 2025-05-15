@@ -126,12 +126,12 @@ export default {
 
   .title,
   .subtitle {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 0;
   }
 
   .contact-button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: auto;
     padding: 10px 25px;
   }
