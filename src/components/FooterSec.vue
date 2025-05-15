@@ -5,8 +5,8 @@
       <div class="brand">
         <h2 class="blankafont">
           RFSYNYZ
+          <p>Rifasya Ayu Nurfayza</p>
         </h2>
-        <p>Rifasya Ayu Nurfayza</p>
         <div class="desc-footer">
           Available to discuss opportunities—reach <br>out as needed.
         </div>
@@ -64,11 +64,6 @@ export default {
   text-align: center;
 }
 
-/* .footer hr {
-  line-height: 1px;
-  width: 90%;
-  color: #eeedf4;
-} */
 
 .footer-content {
   display: flex;
@@ -97,6 +92,7 @@ export default {
   margin: 0;
   text-align: left;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .blankafont {
@@ -149,4 +145,63 @@ export default {
   font-size: 0.8vw;
   padding-bottom: 1px;
 }
+
+
+/* Responsive untuk layar <=768px (tablet dan HP) */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10vw;
+    text-align: center;
+  }
+
+  .brand h2,
+  .brand p,
+  .desc-footer {
+    text-align: center;
+  }
+
+  .brand h2 {
+    font-size: 28px;
+  }
+
+  .brand p {
+    font-size: 14px;
+  }
+
+  .desc-footer {
+    font-size: 1rem;
+    margin-top: 2vh;
+  }
+
+  .nav-links {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+    padding-top: 0;
+  }
+}
+
 </style>

@@ -1,5 +1,4 @@
 <template>
-  <div class="blank-cont" />
   <hr>
   <section id="section-services" class="bg-service">
     <h1>Services</h1>
@@ -20,16 +19,24 @@
       return {
         services: [
           {
-            title: "Project Design",
-            description: "Creating Some Design, Like UI/UX Design and Logos or Icons",
-          },
-          {
             title: "Web Development",
             description: "Implement UI/UX Design into User-Friendly Websites",
           },
           {
-            title: "ML & DL Development",
-            description: "Develop Machine Learning & Deep Learning Models and Applications",
+            title: "Project Design",
+            description: "Designing project like UI/UX and Logos or Icons",
+          },
+          {
+            title: "AI Engineer",
+            description: "Develop with Machine Learning & Deep Learning Models and Applications",
+          },
+          {
+            title: "Social Media Assistant",
+            description: "Assisting in designing content for social media to reach better engagement",
+          },
+          {
+            title: "Video Editor",
+            description: "Editing basic video content for various platforms to enhance engagement and reach",
           },
         ],
       };
@@ -44,14 +51,6 @@ hr {
     background-color: #000; /* Warna hitam */
     width: 90%; /* Biar nggak full lebar */
     margin: 10px auto; 
-}
-
-.blank-cont {
-    background-color: #eeedf4;
-    min-height: 35vw; /* Gunakan viewport height supaya fleksibel */
-    max-height: 500px; /* Batas maksimal supaya tidak terlalu besar */
-    padding: 3vw 0; 
-    margin-top: 0;
 }
 
 /* Section Services */
@@ -125,20 +124,75 @@ hr {
     color: #eeedf4;
 }
   
-  /* Responsive Design */
-  /* @media screen and (max-width: 768px) {
-    .bg-service {
-      padding: 50px 20px;
-    }
-  
-    .card-services {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .cont-services {
-      width: 90%;
-    }
-  } */
+/* Responsive untuk layar <= 1200px */
+@media screen and (min-width: 1200px) {
+  .cont-services {
+    width: 28%; /* Lebih besar karena layar mengecil */
+  }
+
+  .cont-services h1 {
+    font-size: 1.8vw;
+  }
+
+  .cont-services h4 {
+    font-size: 1.3vw;
+  }
+
+  .bg-service h1 {
+    font-size: 2.5vw;
+  }
+
+  .bg-service h5 {
+    font-size: 1.2rem;
+    padding-bottom: 1vw;
+  }
+
+  .card-services {
+    padding-bottom: 3vw;
+  }
+
+  .card-services h1 {
+    font-size: 1.5vw;
+  }
+
+  .card-services h4 {
+    font-size: 1vw;
+  }
+}
+
+/* Responsive untuk layar <= 768px (tablet dan HP) */
+@media screen and (max-width: 768px) {
+  .card-services {
+    /* flex-direction: column; */
+    gap: 20px;
+    padding-bottom: 5vw;
+  }
+
+  .cont-services {
+    width: 30%;
+    padding: 20px;
+  }
+
+  .cont-services h1 {
+    font-size: 1.2rem;
+  }
+
+  .cont-services h4 {
+    font-size: 0.8rem;
+  }
+
+  .bg-service h1 {
+    font-size: 1.7rem;
+  }
+
+  .bg-service h5 {
+    font-size: 0.8rem;
+  }
+
+  .card-services h1 {
+    font-size: 1.2rem;
+  }
+}
+
   </style>
   

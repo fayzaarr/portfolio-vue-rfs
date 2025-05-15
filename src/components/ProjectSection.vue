@@ -57,10 +57,24 @@ export default {
         },
         {
           category: "Design",
-          title: "UI/UX & Logo",
+          title: "UI/UX Design",
           description: "Designing user-friendly websites and apps, and creating logos for products.",
           link: "https://www.figma.com/design/AplZ72UHZvLcBUDH8my3Nk/Project-Design?node-id=0-1&t=5PF2vRRXplAVA6Lt-1",
           icon: "figma.png"
+        },
+        {
+          category: "Design",
+          title: "Design Content",
+          description: "Designing engaging social media posts, banners, and promotional materials for various platforms.",
+          link: "https://www.canva.com/design/DAGnPG5m1WQ/DjzxxqDG6zkGhV7jBQHvZg/view?utm_content=DAGnPG5m1WQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc661dfec1d",
+          icon: "easel.png"
+        },
+        {
+          category: "Editing",
+          title: "Video Editing",
+          description: "Creating simple, beginner-friendly video content for social media.",
+          link: "https://www.canva.com/design/DAGnWTZ91so/Xh7dy3BLvlaBdpoS6O81aA/view?utm_content=DAGnWTZ91so&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5cb284e20d", 
+          icon: "easel.png"
         }
       ]
     };
@@ -73,9 +87,9 @@ export default {
 #section-projects {
   position: relative;
   width: auto;
-  height: 23vw;
-  padding: 0 100px;
+  height: auto;
   margin-top: -10px;
+  margin-bottom: 3vw;
 }
 
 .sec-proj {
@@ -99,7 +113,7 @@ export default {
 .proj-text h5 {
   font-size: 1.1vw;
   opacity: 0.6;
-  margin-bottom: -4vh;
+  margin-bottom: -2vh;
 }
 
 .proj-text h1 {
@@ -108,17 +122,19 @@ export default {
 }
 
 .proj-text h3 {
-  font-size: 2.2vh;
+  font-size: 2vh;
   font-weight: lighter;
+  padding: 0 3vw;
 }
 
 /* Card Container */
 .bg-cardproj {
   background-color: #eeedf4;
-  width: 100%;
-  margin-top: 45vh;
+  width: auto;
+  margin-top: 5vw;
   display: grid;
   overflow: visible;
+  /* padding: 2vw; */
 }
 
 .cards-container {
@@ -126,8 +142,9 @@ export default {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  margin-top: -43vh;
   width: 100%;
+  margin: 0 auto;
+  margin-top: -3vw;
 }
 
 /* Card Styling */
@@ -135,8 +152,9 @@ export default {
   background-color: #eeedf4;
   border-radius: 20px;
   box-shadow: 0 1px 5px rgb(0, 0, 0);
-  width: 25vw;
-  height: 17vw;
+  width: 24vw;
+  max-width: 480px; /* Biar gak terlalu besar di layar gede */
+  height: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -148,24 +166,24 @@ export default {
 
 .card h5 {
   opacity: 0.6;
-  font-size: 1.1vw;
-  margin: 0;
-  margin-top: 20px;
+  font-size: 1vw;
+  margin: 20px 0 10px 0;
 }
 
 .card h1 {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   margin: 0;
-  padding: 0;
 }
 
 .card p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   padding: 10px;
+  /* margin-bottom: 2vw; */
   line-height: 1.5;
   font-weight: lighter;
 }
 
+/* Button */
 .btn-proj {
   display: flex;
   align-items: center;
@@ -173,27 +191,105 @@ export default {
   border: 1px solid #fff;
   color: #eeedf4;
   background-color: #0D0E0E;
-  padding: 10px 50px;
-  gap: 18px;
-  font-size: 2.3vh;
+  padding: 10px 30px;
+  gap: 12px;
+  font-size: 2vh;
   box-shadow: 0 4px 8px #000;
   cursor: pointer;
   text-decoration: none;
+  margin-top: auto;
+  margin-bottom: 1vw;
 }
 
 .btn-proj:hover {
   background-color: #8b8b8b;
   color: #0D0E0E;
-  border: 1px solid #fff;
   transform: translateY(-2px);
 }
 
 .btn-icon {
-  width: 1.8vw;
+  width: 1.5vw;
   filter: brightness(0) invert(1);
 }
 
 .btn-proj:hover .btn-icon {
   filter: grayscale(100%) brightness(0.1);
+}
+
+/* ================== Responsive Breakpoints ================== */
+
+/* Layar lebih dari 1200px */
+@media (min-width: 1200px) {
+  .proj-text h5 {
+    font-size: 1vw;
+  }
+
+  .proj-text h1 {
+    font-size: 2.2vw;
+  }
+
+  .proj-text h3 {
+    font-size: 1.2vw;
+  }
+
+  .card p {
+    font-size: 1vw;
+  }
+}
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+  #section-projects {
+    margin-bottom: 5vw;
+  }
+
+  .myproj {
+    padding-top: 7vw;
+  }
+
+  .proj-text h5 {
+    font-size: 1rem;
+  }
+
+  .proj-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .proj-text h3 {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    /* flex-direction: column; */
+    gap: 30px;
+    align-content: center;
+  }
+
+  .card {
+    width: 35vw;
+    max-width: none;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .btn-proj {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .btn-icon {
+    width: 20px;
+  }
+
 }
 </style>

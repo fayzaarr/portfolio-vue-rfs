@@ -2,7 +2,7 @@
   <section id="section-home">
     <header class="secHome">
       <h1>Hello! Rifasya Here.</h1>
-      <p>—A Passionate UI/UX Designer, Junior Frontend Developer, and Machine & Deep Learning Enthusiast!</p>
+      <p>—A Passionate Junior Frontend Developer, UI/UX Designer, AI Engineer, and Social Media Assistant Enthusiast!</p>
     </header>
   
     <!-- Social Media Links -->
@@ -34,74 +34,107 @@ export default {
 </script>
   
 <style scoped>
-/* CSS dari Home Section */
+
 #section-home {
-    position: relative; 
-    width: 100%;
-    height: 34vw;
-    display: flex;
-    color: #ffffff; 
-    overflow: hidden; 
-    font-weight: lighter;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 100%;
+  min-height: 65vh;
+  color: #0d0e0e;
+  /* padding: 3vw; */
+  font-weight: lighter;
+  overflow: hidden;
 }
 
 #section-home::before {
-    content: '';
-    background: url("https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/banner1_dhpqj2.png") no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.11; 
-    z-index: -1; 
+  content: '';
+  background: url("https://res.cloudinary.com/dwpf6qqtm/image/upload/v1742352626/banner1_dhpqj2.png") no-repeat center center / cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0.11;
+  z-index: -1;
 }
-  
+
 .secHome h1 {
-    font-size: 3.8vw;
-    font-weight: bold;
-    color: #0D0E0E;
-    z-index: 1;
-    padding-left: 80px;
-    padding-top: 9vw;
-    padding-bottom: 44px;
-    margin: 0px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  padding-left: 3vw;
 }
 
 .secHome p {
-    font-size: 1.5vw;
-    color: #0D0E0E; 
-    z-index: 1; 
-    padding-left: 80px;
-    margin: 0px;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  margin: 0;
+  padding-left: 3vw;
 }
 
-.secHome p span{
-    font-weight: 700;
-}
-  
-/* Social Media Links */
 .social-links {
-    position: absolute;
-    bottom: 1vw;
-    right: 60px;
-    display: flex;
-    gap: 20px;        
-}
-
-.social-links a {
-    display: inline-block;
+  margin-top: 8rem;
+  margin-right: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .social-links img {
-    width: 2.3vw;
-    height: auto;
-    transition: transform 0.3s ease;
+  width: 2.3rem;
+  transition: transform 0.3s ease;
 }
 
 .social-links img:hover {
-    transform: scale(1.2); 
+  transform: scale(1.2);
+}
+
+@media (min-width: 1200px) {
+  #section-home {
+    gap: 3rem;
+  }
+
+  .secHome h1 {
+    font-size: clamp(3rem, 3.5vw, 5rem);
+  }
+
+  .secHome p {
+    font-size: clamp(1.2rem, 1.5vw, 1.75rem);
+  }
+
+  .social-links {
+    justify-content: flex-end;
+    margin-right: 7rem;
+    gap: 2rem;
+  }
+
+  .social-links img {
+    width: 2.2vw;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #section-home {
+    gap: 2rem;
+    min-height: 45vh;
+  }
+
+  .secHome h1 {
+    text-align: center;
+  }
+
+  .secHome p {
+    text-align: center;
+    padding: 1vw;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 </style>
   

@@ -108,87 +108,176 @@ methods: {
 
 <style scoped>
 .contact-container {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 70%;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .logo {
-    width: 7vw;     
+  width: 7vw;
 }
 
 .back-button {
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 0.5vw;
-    width: 6vw;
-    background-color: #0D0E0E;
-    color: #eeedf4;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  background-color: #0D0E0E;
+  color: #eeedf4;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 h2 {
-    font-size: 1.8vw;
-    padding-top: 1vh;
-    /* margin: 20px 0; */
-    font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
-label {
-    text-align: left;
-    font-size: 1.1vw;
-    padding-bottom: 5px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .input-group {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .input-field {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-input, select, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;;
+label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
 }
 
 textarea {
-    min-height: 25vh;
+  min-height: 150px;
+  resize: vertical;
 }
 
 .submit-button {
-    background: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 10px;
-    width: 100%;
-    margin-top: 10px;
+  background-color: #0D0E0E;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
+
+.submit-button:hover {
+  background-color: #444;
+}
+
+/* ======================== Responsive ======================== */
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 7vw;
+  }
+
+  .back-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1.1rem;
+  }
+
+  .submit-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+}
+
 </style>

@@ -53,35 +53,35 @@
       return {
         skills: [
           {
+            title: "Junior Frontend Developer",
+            description: "Developing and implementing user interfaces that ensure a seamless and user-friendly experience",
+            category: "Web Tech & Framework I Use:",
+            subCategory: "HTML, CSS, JavaScript, Git, React.JS, and Vue.JS",
+            tools: [
+              { name: "HTML", percentage: 90 },
+              { name: "CSS", percentage: 83 },
+              { name: "JavaScript", percentage: 65 },
+              { name: "Git & Github", percentage: 56 },
+              { name: "React", percentage: 45 },
+              { name: "Vue", percentage: 75 },
+              { name: "VS Code", percentage: 89 }
+            ],
+            icon: "web-design.png"
+          },
+          {
             title: "UI/UX Designer",
             description: "Designing a system that prioritizes responsiveness, user-friendliness, and efficiency",
             category: "Designing for: ",
             subCategory: "Webs, Apps, Logos",
             tools: [
               { name: "Figma", percentage: 89 },
-              { name: "Adobe Illustrator", percentage: 45 },
-              { name: "Canva", percentage: 90 }
+              { name: "Adobe Illustrator", percentage: 50 },
+              { name: "Adobe XD", percentage: 56 }
             ],
             icon: "ui-ux.png"
           },
           {
-            title: "Junior Frontend Developer",
-            description: "Developing and implementing user interfaces that ensure a seamless and user-friendly experience",
-            category: "Web Tech I Use:",
-            subCategory: "HTML, CSS, JavaScript, Git",
-            tools: [
-              { name: "HTML", percentage: 88 },
-              { name: "CSS", percentage: 83 },
-              { name: "JavaScript", percentage: 65 },
-              { name: "Git & Github", percentage: 56 },
-              { name: "React", percentage: 45 },
-              { name: "Vue", percentage: 54 },
-              { name: "VS Code", percentage: 87 }
-            ],
-            icon: "web-design.png"
-          },
-          {
-            title: "Machine & Deep Learning Developer",
+            title: "AI Engineer",
             description: "Implementing machine & deep learning models for predictions & solutions",
             category: "Programming Languages:",
             subCategory: "Python (Tensorflow, Pytorch, and Scikit-learn)",
@@ -93,6 +93,32 @@
               { name: "Pycharm", percentage: 82 }
             ],
             icon: "deep-learning1.png"
+          },
+          {
+            title: "Social Media Assistant",
+            description: "Creating engaging content, scheduling posts, and planning strategies for social media platforms",
+            category: "Content Design & Planning Tools:",
+            subCategory: "Canva, Adobe Illustrator, Gimp, Trello, Notion",
+            tools: [
+              { name: "Canva", percentage: 90 },
+              { name: "Adobe Illustrator", percentage: 50 },
+              { name: "Gimp", percentage: 75 },
+              { name: "Trello", percentage: 70 },
+              { name: "Notion", percentage: 85 }
+            ],
+            icon: "content.png"
+          },
+          {
+            title: "Video Editor",
+            description: "Editing and enhancing videos, adding effects, and optimizing content for various platforms",
+            category: "Video Editing Tools:",
+            subCategory: "Adobe Premiere Pro, Capcut, Canva (Video)",
+            tools: [
+              { name: "Adobe Premiere Pro", percentage: 80 },
+              { name: "Capcut", percentage: 80 },
+              { name: "Canva (Video)", percentage: 85 }
+            ],
+            icon: "video-editor.png"
           }
         ]
       };
@@ -145,12 +171,12 @@
 }
 
 .skill-icon {
-  width: 5vw;
-  height: 5vw;
+    width: 7vw;
+    height: 7vw;
 }
 
 h3 {
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -161,7 +187,7 @@ h3 {
 }
 
 .description {
-  font-size: 0.95vw;
+  font-size: 1.1vw;
   /* font-weight: 600; */
   color: black;
   margin: 0;
@@ -169,13 +195,13 @@ h3 {
 }
 
 .category {
-  font-size: 0.95vw;
+  font-size: 1.2vw;
   font-weight: bold;
   margin-top: 30px;
 }
 
 .sub-category {
-  font-size: 0.8vw;
+  font-size: 1.1vw;
   color: #000000;
 }
 
@@ -187,7 +213,7 @@ h3 {
 .tools-title {
   text-align: center;
   font-weight: bold;
-  font-size: 0.95vw;
+  font-size: 1.3vw;
   margin-bottom: 1vw;
 }
 
@@ -204,9 +230,9 @@ h3 {
 }
 
 .tool-name {
-  min-width: 150px;
-  font-weight: 500;
-  font-size: 0.8vw;
+    min-width: 6vw;
+    font-weight: 500;
+    font-size: 1vw;
 }
 
 /* Container untuk progress bar */
@@ -220,7 +246,7 @@ h3 {
 /* Progress bar utama */
 .progress-bar {
   flex-grow: 1;
-  height: 0.8vw;
+  height: 1.5vw;
   background: #d3d3d3; /* Warna background */
   border-radius: 20px;
   overflow: hidden;
@@ -239,7 +265,7 @@ h3 {
   justify-content: flex-end;
   padding-right: 8px;
   color: white;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
   font-weight: bold;
   animation: fillBar 1.5s ease-in-out forwards;
   animation-delay: var(--delay, 0s);
@@ -251,5 +277,98 @@ h3 {
     width: var(--fill-width);
   }
 }
+
+/* Responsive di layar besar */
+@media screen and (min-width: 1200px) {
+  .skill-icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  h3 {
+    font-size: 1.2vw;
+  }
+
+  .description, .sub-category {
+    font-size: 1vw;
+  }
+
+  .category {
+    font-size: 1.1vw;
+  }
+
+  .tools-title {
+    font-size: 1.2vw;
+  }
+
+  .tool-name {
+    font-size: 0.9vw;
+  }
+
+  .progress-bar {
+    height: 1.2vw;
+  }
+
+  .progress-fill {
+    font-size: 0.8vw;
+  }
+}
+
+/* Responsive di layar kecil (tablet & HP) */
+@media screen and (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr; /* Jadi 1 kolom */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .skill-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-icon {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  h3 {
+    font-size: 2.5vw;
+  }
+
+  .description, .sub-category, .category {
+    font-size: 2vw;
+  }
+
+  .tools-title {
+    font-size: 2.5vw;
+  }
+
+  .tool-name {
+    font-size: 2vw;
+    min-width: 10vw;
+  }
+
+  .progress-bar {
+    height: 3vw;
+    width: 35vw;
+  }
+
+  .progress-item {
+    gap: 2vw;
+    width: 100%;
+  }
+
+  .progress-fill {
+    font-size: 1vw;
+  }
+
+  .progress-list {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    align-items: flex-start;
+  }
+}
+
 </style>
   

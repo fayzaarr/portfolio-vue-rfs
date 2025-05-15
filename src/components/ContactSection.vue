@@ -34,14 +34,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 60px 0;
   background-color: #0D0E0E;
   margin-top: 8vw;
 }
 
 .contact-box {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   align-items: center;
   gap: 10vw;
   padding: 1vw;
@@ -49,7 +49,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.811);
   background-color: #eeedf4;
-  margin-top: -6.5vw;
+  margin-top: -8.5vw;
 }
 
 .text-content {
@@ -95,4 +95,56 @@ export default {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive untuk layar <=1200px */
+@media screen and (min-width: 1200px) {
+  .contact-box {
+    /* flex-direction: column; */
+    width: 50%;
+    gap: 3vw;
+    /* padding: 2vw; */
+    margin-top: -7.5vw;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 1.2vw;
+    margin-left: 0;
+  }
+
+  .contact-button {
+    font-size: 1.1vw;
+    width: 12vw;
+    margin-right: 0;
+  }
+}
+
+/* Responsive untuk layar <=768px (tablet dan HP) */
+@media screen and (max-width: 768px) {
+  .contact-box {
+    /* flex-direction: column; */
+    gap: 20px;
+    padding: 20px;
+    margin-top: -10vw;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    width: auto;
+    padding: 10px 25px;
+  }
+
+  .contact-container {
+    /* padding: 30px 10px; */
+    padding-top: 7vw;
+    padding: 3vw;
+  }
+}
+
 </style>
