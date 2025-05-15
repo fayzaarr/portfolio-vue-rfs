@@ -236,7 +236,7 @@ export default {
   }
 
   .myproj {
-    padding-top: 7vw;
+    padding-top: 9vw;
   }
 
   .proj-text h5 {
@@ -257,7 +257,7 @@ export default {
   }
 
   .card {
-    width: 35vw;
+    width: 30vw;
     max-width: none;
   }
 

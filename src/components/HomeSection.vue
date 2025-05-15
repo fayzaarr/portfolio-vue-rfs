@@ -73,11 +73,12 @@ export default {
 
 .social-links {
   margin-top: 8rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .social-links img {
@@ -106,7 +107,7 @@ export default {
 
   .social-links {
     justify-content: flex-end;
-    margin-right: 7rem;
+    /* margin-right: 7rem; */
     gap: 2rem;
   }
 

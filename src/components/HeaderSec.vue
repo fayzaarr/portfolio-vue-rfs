@@ -178,8 +178,8 @@
     }
 
     .logo {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
     }
 
     nav {
@@ -187,7 +187,7 @@
     }
 
     nav > a {
-      font-size: 1.3rem;
+      font-size: 1rem;
       padding: 8px 25px;
     }
   }

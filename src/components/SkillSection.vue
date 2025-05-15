@@ -313,30 +313,35 @@ h3 {
     gap: 20px;
   }
 
+  .container {
+    width: 90%;
+  }
+
   .skill-header {
     flex-direction: column;
     align-items: center;
   }
 
   .skill-icon {
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
   }
 
   h3 {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .description, .sub-category, .category {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .tools-title {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    margin-bottom: 2vw;
   }
 
   .tool-name {
-    font-size: 2vw;
+    font-size: 2.5vw;
     min-width: 10vw;
   }
 
@@ -351,7 +356,7 @@ h3 {
   }
 
   .progress-fill {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 
   .progress-list {
