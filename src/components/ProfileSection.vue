@@ -7,7 +7,7 @@
           <h1>about me.</h1>
           <p>
             Hello! I'm
-            <span class="highlight">Rifasya Ayu Nurfayza</span>, you can call me as <span>Rifasya</span>. <span>Informatics fresh graduate</span> from Indonesia. I’m really passionate about <span>frontend development</span>, <span>UI/UX design</span>, 
+            <span class="highlight">Rifasya Ayu Nurfayza</span>, you can call me as <span>Rifasya</span> or <span>Ipas</span>. <span>Informatics fresh graduate</span> from Indonesia. I’m really passionate about <span>frontend development</span>, <span>UI/UX design</span>, 
             and a bit of <span>AI engineering</span> too. I love turning ideas into <span>clean, responsive websites</span> that are nice to use and easy to look at. With hands-on <span>experience</span> in <span>machine and deep learning</span>, 
             I <span>developed a real-time face recognition-based attendance system</span> that combines AI with intuitive design. <br><br>
             
