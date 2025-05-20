@@ -1,14 +1,18 @@
-# 🚧 Proyek dalam Pengembangan 🚧
+## Web Portfolio - First Project
 
-Ini adalah proyek yang masih dalam tahap pengembangan. Saat ini, fitur-fitur utama sedang dikerjakan, dan beberapa aspek mungkin belum berfungsi sepenuhnya.
+Hey there! 👋
+This is my very first web portfolio — built as part of my learning journey in front-end development.  
+It's simple, but I'm proud of how it turned out and excited to keep improving from here.
 
-## ⚠️ Status Saat Ini
-- ✅ Fitur dasar telah dibuat
-- ❌ Responsiveness belum diterapkan
-- 🔨 Pengembangan masih berlangsung
+## 🛠 Tech Stack  
+• Vue.js – Main front-end framework  
+• HTML & CSS – Structure and styling  
+• JavaScript – For simple interactivity
 
-## 📌 Catatan
-- Proyek ini mungkin tidak berjalan optimal di perangkat mobile karena belum mendukung tampilan responsif.
-- Perubahan dan pembaruan akan terus dilakukan untuk meningkatkan pengalaman pengguna.
+## 📌 Notes
+Since this is my first portfolio project, it's not super fancy — but it’s a solid start and I’ve learned a lot building it.  
+I’m planning to keep improving it and adding new things as I grow.
 
-Terima kasih telah mengunjungi proyek ini! 🚀
+## 🙌 Thanks!
+Thanks for checking out my project!  
+Feel free to leave feedback or suggestions — I'd really appreciate it. 😊
