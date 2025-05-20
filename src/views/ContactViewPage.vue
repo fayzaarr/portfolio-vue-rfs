@@ -257,7 +257,7 @@ textarea {
   }
 
   .back-button {
-    width: 25%;
+    width: 28%;
     font-size: 0.7rem;
   }
 

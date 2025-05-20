@@ -107,7 +107,6 @@ export default {
 
   .social-links {
     justify-content: flex-end;
-    /* margin-right: 7rem; */
     gap: 2rem;
   }
 
