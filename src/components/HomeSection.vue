@@ -2,7 +2,7 @@
   <section id="section-home">
     <header class="secHome">
       <h1>Hello! Rifasya Here.</h1>
-      <p>—A Passionate Junior Frontend Developer, UI/UX Designer, AI Engineer, and Social Media Assistant Enthusiast!</p>
+      <p>— Tech & Creative Enthusiast: Frontend • UI/UX • AI Engineer • Video Editing • Social Media Assistant</p>
     </header>
   
     <!-- Social Media Links -->
